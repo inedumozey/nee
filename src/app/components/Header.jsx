@@ -1,5 +1,4 @@
 import { Acme, Sevillana } from 'next/font/google'
-import Image from 'next/image'
 const acme = Acme({ subsets: ['latin'], weight: ['400'] })
 const sevillana = Sevillana({ subsets: ['latin'], weight: ['400'] })
 
@@ -9,7 +8,7 @@ export default function Header() {
             <div className={`${acme.className} font-bold text-[2rem]`}><span className={sevillana.className}>A</span>rogundade</div>
             <div className='text-center'>
                 <div>Mrs Arogundade of blessed memory</div>
-                <div className='text-[.8rem]'>12<sup>th</sup> Oct, 1975 - 21<sup>st</sup> Nov, 2023</div>
+                <div className='text-[.8rem] text-[#e5e3e3]'>{"("}12<sup>th</sup> Oct, 1975 - 21<sup>st</sup> Nov, 2023{")"}</div>
             </div>
         </div>
     )
