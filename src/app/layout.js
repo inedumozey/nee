@@ -1,5 +1,8 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
+import axios from 'axios';
+axios.defaults.baseURL = 'https://nee-server.onrender.com/api/v1';
+axios.defaults.withCredentials = false;
 
 const inter = Inter({ subsets: ['latin'] })
 
