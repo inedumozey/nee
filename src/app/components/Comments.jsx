@@ -117,11 +117,11 @@ export default function Comments() {
                         <div className='text-white text-center w-full'>No Data</div> :
                         comments.map((data, i) => {
                             return (
-                                <div key={i} className=' w-full flex gap-2 md:p-[5px] p-[10px] mb-[15px]'>
+                                <div key={i} className=' w-full flex gap-2 md:p-[5px] p-[10px] mb-[10px]'>
                                     <img src="/profile.png" alt="profile-pic" className='w-[45px] h-[45px] rounded-full' />
                                     <div className='text-white w-full'>
                                         <div className='font-bold'>
-                                            <span className='text-[1.2rem]'>{commonName(data.name)}</span>
+                                            <span className='text-[.9rem]'>{commonName(data.name)}</span>
                                             {" - "}
                                             <span className='text-[.7rem] text-[#b6b5b5]'>{date(data.createdAt)}</span>
                                         </div>
