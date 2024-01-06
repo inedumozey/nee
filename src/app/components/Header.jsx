@@ -4,7 +4,7 @@ const sevillana = Sevillana({ subsets: ['latin'], weight: ['400'] })
 
 export default function Header() {
     return (
-        <div className='text-white p-[10px]' >
+        <div className='text-white p-[10px] mb-[0px] md:mb-[30px]' >
             <div className={`${acme.className} font-bold text-[2rem]`}><span className={sevillana.className}>A</span>rogundade</div>
             <div className='text-center'>
                 <div>Mrs Arogundade of blessed memory</div>

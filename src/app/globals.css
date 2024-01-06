@@ -26,16 +26,14 @@ body {
 
 input {
   padding: 10px;
-  color: #fff;
 }
 
 textarea{
   min-height: 50px;
   max-height: 250px;
-  color: #fff;
   padding: 10px;
 }
 input:focus, textarea:focus {
   outline: none;
-  border: 2px solid greenyellow
+  border: 2px solid green
 }

@@ -121,13 +121,11 @@ export default function Comments() {
                                     <img src="/profile.png" alt="profile-pic" className='w-[45px] h-[45px] rounded-full' />
                                     <div className='text-white w-full'>
                                         <div className='font-bold'>
-                                            <span className='text-[1.2rem]'>{commonName("john doe")}</span>
+                                            <span className='text-[1.2rem]'>{commonName(data.name)}</span>
                                             {" - "}
-                                            <span className='text-[.7rem] text-[#9c9b9b]'>{date("2024-02-05T20:48:00.546Z")}</span>
+                                            <span className='text-[.7rem] text-[#b6b5b5]'>{date(data.createdAt)}</span>
                                         </div>
-                                        <div className='text-[.9rem]'>
-                                            loeiuehehg
-                                        </div>
+                                        <div className='text-[.8rem]'>{data.body}</div>
                                     </div>
                                 </div>
                             )
