@@ -12,7 +12,7 @@ export default function Form() {
             <div className='md:w-[350px] bg-red-500 hidden md:block h-[2px]'></div>
 
             <div className={`md:w-[350px] w-full flex justify-center ${fix ? 'fixed top-[2px]' : 'static'}`}>
-                <form className={`bg-white ${fix ? 'bg-opacity-[.95]' : 'bg-opacity-20'} md:bg-opacity-20 p-[10px] h-150px max-h-[370px] rounded-sm`}>
+                <form className={`bg-white ${fix ? 'bg-opacity-[1]' : 'bg-opacity-20'} md:bg-opacity-20 p-[10px] h-150px max-h-[370px] rounded-sm`}>
                     <div>
                         <textarea
                             placeholder='Tribute *'
