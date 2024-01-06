@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from 'react'
 import Header from './components/Header';
 import axios from 'axios';
+import Form from './components/Form';
+import Comments from './components/Comments';
 // import {Alart} from "@mozeyinedu/react-lab"
 
 
@@ -23,9 +25,13 @@ export default function Home() {
     <div>
       {/* header */}
       <Header />
-      <form>
+      <div className='flex md:flex-row flex-col gap-3 p-[5px] md:pl-[10px] md:pr-[10px]'>
+        {/* form */}
+        <Form />
 
-      </form>
+        {/* comments */}
+        <Comments />
+      </div>
     </div>
   )
 }
