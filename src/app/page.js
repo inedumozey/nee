@@ -39,7 +39,6 @@ export default function Home() {
 
   useEffect(() => {
     fetch();
-    audioElem.current.play()
   }, [])
 
   useEffect(() => {
@@ -77,7 +76,7 @@ export default function Home() {
         }
       </div>
 
-      <audio src="music.mp3" type="audio/mpeg" ref={audioElem} />
+      <audio src="music.mp3" type="audio/mpeg" ref={audioElem} autoplay />
     </div>
   )
 }
