@@ -21,9 +21,8 @@ export default function Comments({ comments, fetching, setRemoveCommentsTemp }) 
                                     <img src="/profile.png" alt="profile-pic" className='w-[45px] h-[45px] rounded-full' />
                                     <div className='text-white w-full'>
                                         <div className='font-bold'>
-                                            <span className='text-[.9rem]'>{commonName(data.name)}</span>
-                                            {" - "}
-                                            <span className='text-[.7rem] text-[#b6b5b5]'>{date(data?.createdAt)}</span>
+                                            <div className='text-[.9rem]'>{commonName(data.name)}</div>
+                                            <div className='text-[.7rem] text-[#b6b5b5]'>{date(data?.createdAt)}</div>
                                         </div>
                                         <div className='text-[.8rem]'>{data.body}</div>
                                     </div>
