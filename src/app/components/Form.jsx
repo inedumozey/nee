@@ -53,7 +53,7 @@ export default function Form({ getAddedComment, setRemoveFormTemp, setRemoveComm
         <div>
             <div className='md:w-[350px] bg-red-500 hidden md:block h-[2px] z-[100]'></div>
 
-            <div className={`md:w-[350px] w-full flex justify-center ${fix ? 'fixed top-[10px]' : 'static'}`}>
+            <div className={`md:w-[350px] w-full flex justify-center ${fix ? 'fixed top-[10px] right-0 left-0' : 'static'}`}>
                 <form onSubmit={submit} className={`bg-white ${fix ? 'bg-opacity-[1]' : 'bg-opacity-20'} md:bg-opacity-20 p-[10px] h-150px max-h-[370px] rounded-b-md`}>
 
                     <div className='bg-white rounded-[10px]'>

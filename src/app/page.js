@@ -67,16 +67,16 @@ export default function Home() {
 
       <ScrollToTop smooth color="var(--major-color-purest)" style={{ background: 'rgba(0,0,0,.2)' }} />
 
-      <div onClick={() => setIsplaying(!isplaying)} className='fixed flex justify-center items-center bottom-2 left-2 w-[30px] h-[30px] rounded-full bg-white opacity-15 cursor-pointer z-[100]'>
+      <div onClick={() => setIsplaying(!isplaying)} className='fixed flex justify-center items-center bottom-2 left-2 w-[30px] h-[30px] rounded-full bg-white cursor-pointer z-[100]'>
 
         {
           isplaying ?
-            <FaPause className='text-black' /> :
-            <FaPlay className='text-black' />
+            <FaPlay className='text-black' /> :
+            <FaPause className='text-black' />
         }
       </div>
 
-      <audio src="music.mp3" type="audio/mpeg" ref={audioElem} autoplay />
+      <audio src="music.mp3" type="audio/mpeg" ref={audioElem} />
     </div>
   )
 }
