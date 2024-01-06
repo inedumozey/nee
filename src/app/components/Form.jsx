@@ -2,15 +2,8 @@ import React, { useEffect, useState } from 'react'
 
 export default function Form() {
     const [fix, setFix] = useState(false)
-    // const [scrollY, setScrollY] = useState(0)
-    window.onscroll = (e) => {
-        if (window.scrollY > 110) {
-            setFix(true)
-        }
-        else {
-            setFix(false)
-        }
-    }
+
+    window.onscroll = (e) => window.scrollY > 400 ? setFix(true) : setFix(false)
 
     return (
         <div>
