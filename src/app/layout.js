@@ -1,7 +1,9 @@
 import { Roboto } from 'next/font/google'
 import './globals.css'
 import axios from 'axios';
-axios.defaults.baseURL = 'https://nee-server.onrender.com/api/v1';
+axios.defaults.baseURL = 'http://localhost:12256/api/v1';
+// axios.defaults.baseURL = 'https://nee-server.onrender.com/api/v1';
+
 axios.defaults.withCredentials = false;
 
 const roboto = Roboto({ subsets: ['latin'], weight: ["100", "300", "400", "500", "700", "900"] })
