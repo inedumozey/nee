@@ -12,7 +12,7 @@ axios.defaults.baseURL = 'https://nee-server.onrender.com/api/v1';
 
 export default function Home() {
   const [fetching, setFetching] = useState(true);
-  const [isplaying, setIsplaying] = useState(true);
+  const [isplaying, setIsplaying] = useState(false);
   const [removeFormTemp, setRemoveFormTemp] = useState(false);
   const [removeCommentsTemp, setRemoveCommentsTemp] = useState(false);
   const [fetchingMore, setFetchingMore] = useState(false);
@@ -71,8 +71,8 @@ export default function Home() {
 
         {
           isplaying ?
-            <FaPlay className='text-black' /> :
-            <FaPause className='text-black' />
+            <FaPause className='text-black' /> :
+            <FaPlay className='text-black' />
         }
       </div>
 
