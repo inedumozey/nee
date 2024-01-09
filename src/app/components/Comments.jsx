@@ -22,7 +22,7 @@ export default function Comments({ comments, fetching, setRemoveCommentsTemp }) 
                                     <div className='text-white w-full'>
                                         <div className='font-bold'>
                                             <div className='text-[.9rem]'>{commonName(data.name)}</div>
-                                            <div className='text-[.7rem] text-[#b6b5b5]'>{date(data?.createdAt)}</div>
+                                            <div className='text-[.7rem] text-[#cecece]'>{date.date(data?.createdAt)}; {date.time(data?.createdAt)}</div>
                                         </div>
                                         <div className='text-[.8rem]'>{data.body}</div>
                                     </div>
