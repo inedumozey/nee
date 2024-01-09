@@ -7,8 +7,8 @@ import axios from 'axios';
 import { FaPlay, FaPause } from "react-icons/fa";
 import Form from './components/Form';
 import Comments from './components/Comments';
-// axios.defaults.baseURL = 'http://localhost:4000/api/v1';
-axios.defaults.baseURL = 'https://nee-server.onrender.com/api/v1';
+axios.defaults.baseURL = 'http://localhost:4000/api/v1';
+// axios.defaults.baseURL = 'https://nee-server.onrender.com/api/v1';
 
 
 export default function Home() {

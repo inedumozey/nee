@@ -84,7 +84,7 @@ export default function Form({ getAddedComment, setRemoveFormTemp, setRemoveComm
                         />
 
                         <input
-                            placeholder='Email'
+                            placeholder='Email *'
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             className={`flex-grow-0 bg-[transparent] border-[1px] border-[#ccc] w-[100%] ${fix ? 'text-[#888] placeholder:text-[#888] md:placeholder:text-[#fff] md:text-white' : 'text-white placeholder:text-[#fff]'}`}
