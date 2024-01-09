@@ -2,7 +2,6 @@ import React from 'react';
 import commonName from '../utils/commonName';
 import date from '../utils/date';
 
-
 export default function Comments({ comments, fetching, setRemoveCommentsTemp }) {
 
     return (
