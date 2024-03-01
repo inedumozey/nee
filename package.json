@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "push": "git add . && git commit -m 'updated' && git push origin master"
   },
   "dependencies": {
     "@mozeyinedu/hooks-lab": "^6.0.0",
